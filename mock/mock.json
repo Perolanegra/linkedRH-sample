@@ -1,0 +1,137 @@
+{
+  "fromMock": {
+    "payload": [
+      {
+        "sections": [
+          {
+            "name": "Dados de identificação",
+            "expanded": true,
+            "cardItems": [
+              {
+                "data": {
+                  "employeeName": "Mariza Cristina de Gimene",
+                  "jobName": "Gerente de Recursos Humanos",
+                  "birthDate": "23/04/1966 (56 anos)",
+                  "companyAdmissionDate": "20/11/1995 (27 anos e 3 meses)",
+                  "cellphoneNumber": "(19) 98936-186",
+                  "email": "mariza.gimene@joinrh.com.br"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Cursos",
+            "expanded": true,
+            "cardItems": [
+              {
+                "data": [
+                  {
+                    "courseName": "Cargos e salários",
+                    "entity": "Senac",
+                    "period": "11/03/2014 a 12/03/2014"
+                  },
+                  {
+                    "courseName": "Equipe de alta performance",
+                    "entity": "AMCHAM",
+                    "period": "12/03/2014 a 12/03/2014"
+                  },
+                  {
+                    "courseName": "Planejamento e execução para líderes",
+                    "entity": "IBC",
+                    "period": "11/05/2013 a 12/05/2013"
+                  },
+                  {
+                    "courseName": "Procedimento 015 - Planejamento e Análise Crítica pela Administração","entity": "Senac",
+                    "period": "15/04/2013 a 17/04/2013"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Formação acadêmica",
+            "expanded": true,
+            "linked": false,
+            "cardItems": [
+              {
+                "data": [
+                  {
+                    "period": "1991 a 1992",
+                    "course": "Gestão estratégica",
+                    "local": "Puccamp",
+                    "educationLevel": "Pós Graduação Cursando"
+                  },
+                  {
+                    "period": "1986 a 1989",
+                    "course": "Administração de empresas",
+                    "local": "Universidade Metodista de Piracicaba"
+                  },
+                  {
+                    "period": "1981 a 1984",
+                    "course": "Administração de empresas",
+                    "local": "FIEC"
+                  },
+                  {
+                    "period": "1973 a 1980",
+                    "course": null,
+                    "local": "Colégio Sagrado Coração de Jesus"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Idiomas",
+            "expanded": false,
+            "cardItems": [
+              {
+                "data": [
+                  {
+                    "language": "Espanhol",
+                    "status": "Completo",
+                    "period": "2013 a 2014"
+                  },
+                  {
+                    "language": "Inglês",
+                    "status": "Completo",
+                    "period": "1996 a 2000"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Histórico profissional",
+            "expanded": false,
+            "cardItems": [
+              {
+                "data": [
+                  {
+                    "job": "Gerente de Recursos Humanos",
+                    "period": "20/11/1995 a 30/06/2007",
+                    "company": null
+                  },
+                  {
+                    "job": "Gerente de Recursos Humanos",
+                    "period": "15/03/1995 a 17/07/1995",
+                    "company": "Singer do Brasil"
+                  },
+                  {
+                    "job": "Coordenadora de Recursos Humanos",
+                    "period": "21/11/1990 a 14/03/1995",
+                    "company": "Singer do Brasil"
+                  },
+                  {
+                    "job": "Coordenadora de Recursos Humanos",
+                    "period": "21/05/1986 a 25/10/1990",
+                    "company": "Indústria de Motores Anauger Ltda."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

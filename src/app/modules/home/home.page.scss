@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  width: 90%;
+  position: relative;
+  top: 24px;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 24px;
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Início </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div class="back-img"></div>
+
+    <div class="card-user">
+      <div class="__header">
+        <div class="box-isolated">
+          <!-- avatar -->
+          <ion-avatar>
+            <img alt="Silhueta da cabeça da pessoa" src="assets/icon/female-avatar.webp" />
+          </ion-avatar>
+          <ion-card-title><strong>{{ (userData$ | async)?.employeeName }}</strong></ion-card-title>
+          <ion-card-subtitle>{{ (userData$ | async)?.jobName }}</ion-card-subtitle>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="buttons">
+        <div class="ion-activatable ripple-parent circle" (click)="onHomeBtnClick('details')">
+          Perfil do Colaborador
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+        <div id="upgradeP" class="ion-activatable ripple-parent circle" (click)="onHomeBtnClick('update')">
+          Atualizar App
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

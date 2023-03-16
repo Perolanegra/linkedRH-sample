@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .accordion {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+
+ion-accordion-group.accordion-group-expand-inset > ion-accordion:first-of-type {
+  border-top-right-radius: 46px !important;
+}

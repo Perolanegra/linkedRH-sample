@@ -1,0 +1,109 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="caret-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title> Perfil do Colaborador </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div class="back-img"></div>
+
+    <div class="card-user">
+      <div class="__header">
+        <div class="box-isolated">
+          <!-- avatar -->
+          <ion-avatar>
+            <img alt="Silhueta da cabeça da pessoa" src="assets/icon/female-avatar.webp" />
+          </ion-avatar> <!--estrutura JSON -->
+          <ion-card-title><strong>{{ params?.request[0].cardItems[0]?.data?.employeeName }}</strong></ion-card-title>
+          <ion-card-subtitle>{{ params?.request[0].cardItems[0]?.data?.jobName }}</ion-card-subtitle>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <ion-accordion-group class="accordion" expand="inset">
+        <ng-container *ngFor="let item of params?.request; let i = index;">
+          <ion-accordion [value]="item.name" toggleIconSlot="start">
+            <ion-item slot="header" color="light">
+              <ion-label>{{ item?.name }}</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <div *ngIf="i === 0">
+                <p id="gray">Admissão na Empresa</p>
+                <p id="white">{{ item.cardItems[0]?.data.companyAdmissionDate }}</p>
+                <br>
+                <p id="gray">Data de Nascimento</p>
+                <p id="white">{{ item.cardItems[0]?.data.birthDate }}</p>
+                <br>
+                <p id="gray">Celular</p>
+                <p id="white">{{ item.cardItems[0]?.data.cellphoneNumber }}</p>
+                <br>
+                <p id="gray">E-mail</p>
+                <p id="white">{{ item.cardItems[0]?.data.email }}</p>
+              </div>
+
+              <div *ngIf="i === 1">
+                <ng-container *ngFor="let c of item.cardItems[0]?.data; let j = index;">
+                  <p id="gray">Nome</p>
+                  <p id="white">{{ c?.courseName }}</p>
+                  <p id="gray">Local</p>
+                  <p id="white">{{ c?.entity }}</p>
+                  <p id="gray">Período</p>
+                  <p id="white">{{ c?.period }}</p>
+                  <br>
+                </ng-container>
+              </div>
+
+              <div *ngIf="i === 2">
+                <ng-container *ngFor="let c of item.cardItems[0]?.data;">
+                  <p id="gray">Curso</p>
+                  <p id="white">{{ c?.course || '-' }}</p>
+                  <p id="gray">Período</p>
+                  <p id="white">{{ c?.period }}</p>
+                  <p id="gray">Local</p>
+                  <p id="white">{{ c?.local }}</p>
+                  <p id="gray">Nível</p>
+                  <p id="white">{{ c?.educationLevel }}</p>
+                  <br>
+                </ng-container>
+              </div>
+
+              <div *ngIf="i === 3">
+                <ng-container *ngFor="let c of item.cardItems[0]?.data;">
+                  <p id="gray">Idioma</p>
+                  <p id="white">{{ c?.language || '-' }}</p>
+                  <p id="gray">Status</p>
+                  <p id="white">{{ c?.status }}</p>
+                  <p id="gray">Período</p>
+                  <p id="white">{{ c?.period }}</p>
+                  <br>
+                </ng-container>
+              </div>
+
+              <div *ngIf="i === 4">
+                <ng-container *ngFor="let c of item.cardItems[0]?.data;">
+                  <p id="gray">Cargo</p>
+                  <p id="white">{{ c?.job || '-' }}</p>
+                  <p id="gray">Período</p>
+                  <p id="white">{{ c?.period }}</p>
+                  <p id="gray">Empresa</p>
+                  <p id="white">{{ c?.company || '-' }}</p>
+                  <br>
+                </ng-container>
+              </div>
+
+            </div>
+          </ion-accordion>
+        </ng-container>
+
+      </ion-accordion-group>
+    </div>
+
+
+  </div>
+</ion-content>

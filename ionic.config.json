@@ -1,0 +1,7 @@
+{
+  "name": "linkedRh",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
